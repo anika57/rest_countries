@@ -1,0 +1,31 @@
+header {
+  background: var(--elements);
+  padding: 1.5rem 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+
+  button {
+    background: none;
+    border: none;
+    color: var(--text);
+    font-weight: 600;
+    cursor: pointer;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 1.5rem 1rem;
+
+    h1 {
+      font-size: 16px;
+    }
+
+    button {
+      font-size: 14px;
+    }
+  }
+}
+

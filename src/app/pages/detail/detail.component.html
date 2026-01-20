@@ -1,0 +1,17 @@
+<button class="back" (click)="back()">← Back</button>
+
+<div class="detail" *ngIf="country">
+  <img [src]="country.flags.svg" />
+
+  <div>
+    <h2>{{ country.name.common }}</h2>
+    <p><b>Native Name:</b> {{ country.name.official }}</p>
+    <p><b>Population:</b> {{ country.population | number }}</p>
+    <p><b>Region:</b> {{ country.region }}</p>
+    <p><b>Capital:</b> {{ country.capital?.[0] }}</p>
+
+    <div class="borders">
+      <span *ngFor="let b of country.borders">{{ b }}</span>
+    </div>
+  </div>
+</div>
